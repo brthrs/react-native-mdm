@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.author       = package["author"]
   s.platforms    = { :ios => "9.0", :tvos => "9.0" }
   s.source       = { :git => "https://github.com/brthrs/react-native-mdm", :tag => "#{s.version}" }
-  s.source_files  = "ios/**/*.{h,m}"
+  s.source_files = "ios/**/*.{h,m}"
+  spec.framework = 'AppConfigSettingsFramework'
 
   s.dependency "React"
 
